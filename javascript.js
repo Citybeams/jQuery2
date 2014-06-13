@@ -1,4 +1,3 @@
-$(document).ready(function(){
   // // this specifies which div to look in #tours, look for buttons "event delegation"
   // $('#tours').on('click', 'button', function(){
   //   // returns the closest data price info when clicked
@@ -18,6 +17,7 @@ function showTicket(){
   $('.confirmation').on('mouseover', 'button', showTicket);
 
 
+$(document).ready(function(){
   $('.vacation').on('keyup', '.quantity', function(){
     // get the price for the vacation (the + changes to a number)
     var price = +$(this).closest('.vacation').data('price');
